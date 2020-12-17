@@ -16,7 +16,7 @@ listint_t *insert_node(listint_t **head, int number)
 	{
 		if (
 			(actual->next
-			 && actual->next->n > number
+			 && actual->next->n >= number
 			 && actual->n <= number)
 			|| (!actual->next && actual->n <= number)
 		    )
